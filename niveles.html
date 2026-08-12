@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NEXA MediTech | Niveles</title><link rel="stylesheet" href="styles.css"></head>
+<body><header class="topbar">
+  <a class="brand" href="index.html">
+    <img src="assets/logo_nexa_meditech.png" alt="NEXA MediTech">
+    <span>CircuitFlex</span>
+  </a>
+  <nav class="nav">
+    <a href="index.html" data-page="inicio"><span class="ico">⌂</span>Inicio</a>
+    <a href="grafico.html" data-page="grafico"><span class="ico">▥</span>Gráfico</a>
+    <a href="niveles.html" data-page="niveles"><span class="ico">☷</span>Niveles</a>
+  </nav>
+</header>
+<main class="page">
+  <div class="title-row">
+    <div class="title-icon">☷</div>
+    <div><h1>Niveles de la media</h1><p class="subtitle">Seleccione el nivel de intensidad</p></div>
+  </div>
+
+  <section class="level-list">
+    <div class="level-row" data-level=".5"><div class="level-left"><div class="level-icon">▥</div>
+      <div><div class="level-name">Bajo</div><div class="level-value">0.5</div></div></div><div class="radio"></div></div>
+    <div class="level-row" data-level="1"><div class="level-left"><div class="level-icon">▥</div>
+      <div><div class="level-name">Medio</div><div class="level-value">1</div></div></div><div class="radio"></div></div>
+    <div class="level-row" data-level="2"><div class="level-left"><div class="level-icon">▥</div>
+      <div><div class="level-name">Alto</div><div class="level-value">2</div></div></div><div class="radio"></div></div>
+    <div class="level-row off" id="offRow"><div class="level-left"><div class="level-icon">⏻</div>
+      <div><div class="level-name">Apagar</div><div class="level-value">Desactivar media</div></div></div><div class="radio"></div></div>
+  </section>
+
+  <div class="info">● &nbsp; Nivel actual: <strong id="selectedLevel">Medio (1)</strong></div>
+</main><footer>© 2026 NEXA MediTech. Todos los derechos reservados.</footer>
+<script src="dashboard.js"></script><script src="niveles_dashboard.js"></script>
+</body></html>
