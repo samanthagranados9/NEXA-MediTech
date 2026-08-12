@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NEXA MediTech | Gráfico</title><link rel="stylesheet" href="styles.css"></head>
+<body><header class="topbar">
+  <a class="brand" href="index.html">
+    <img src="assets/logo_nexa_meditech.png" alt="NEXA MediTech">
+    <span>CircuitFlex</span>
+  </a>
+  <nav class="nav">
+    <a href="index.html" data-page="inicio"><span class="ico">⌂</span>Inicio</a>
+    <a href="grafico.html" data-page="grafico"><span class="ico">▥</span>Gráfico</a>
+    <a href="niveles.html" data-page="niveles"><span class="ico">☷</span>Niveles</a>
+  </nav>
+</header>
+<main class="page">
+  <div class="title-row">
+    <div class="title-icon">▥</div>
+    <div><h1>Datos o Gráficos</h1><p class="subtitle">Visualización de datos de la media</p></div>
+  </div>
+
+  <section class="card level-selector">
+    <h3>Nivel actual</h3>
+    <div class="levels-top">
+      <button class="level-btn" data-level=".5">Bajo<br><small>0.5</small></button>
+      <button class="level-btn" data-level="1">Medio<br><small>1</small></button>
+      <button class="level-btn" data-level="2">Alto<br><small>2</small></button>
+    </div>
+  </section>
+
+  <section class="card chart-card"><canvas id="sensorChart"></canvas></section>
+
+  <section class="actions">
+    <button class="action-btn sim" id="simulateButton">▶ &nbsp; Simular valores</button>
+    <button class="action-btn stop" id="stopButton">■ &nbsp; Detener</button>
+  </section>
+
+  <div class="info">● &nbsp; Nivel actual: <strong id="levelLabel">Medio (1)</strong>
+    &nbsp; | &nbsp; Valor: <strong id="currentValue">30</strong></div>
+</main><footer>© 2026 NEXA MediTech. Todos los derechos reservados.</footer>
+<script src="dashboard.js"></script><script src="grafico_dashboard.js"></script>
+</body></html>
