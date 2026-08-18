@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NEXA MediTech | Niveles</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <img src="assets/logo_nexa_meditech.png" alt="NEXA MediTech">
+    <span>CircuitFlex</span>
+  </a>
+  <nav class="nav">
+    <a href="index.html" data-page="inicio"><span class="ico">⌂</span>Inicio</a>
+    <a href="grafico.html" data-page="grafico"><span class="ico">▥</span>Gráfico</a>
+    <a href="niveles.html" data-page="niveles" class="active"><span class="ico">☷</span>Niveles</a>
+  </nav>
+</header>
+
+<main class="page">
+  <div class="title-row">
+    <div class="title-icon">☷</div>
+    <div>
+      <h1>Niveles del Sensor</h1>
+      <p class="subtitle">Seleccione el nivel de intensidad o modo de operación</p>
+    </div>
+  </div>
+
+  <section class="level-list">
+    <div class="level-row" id="btnBajo" style="cursor: pointer;">
+      <div class="level-left">
+        <div class="level-icon">▥</div>
+        <div>
+          <div class="level-name">Modo 1</div>
+          <div class="level-value">Relé 1</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="level-row" id="btnMedio" style="cursor: pointer;">
+      <div class="level-left">
+        <div class="level-icon">▥</div>
+        <div>
+          <div class="level-name">Modo 2</div>
+          <div class="level-value">Relé 2</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="level-row" id="btnAlto" style="cursor: pointer;">
+      <div class="level-left">
+        <div class="level-icon">▥</div>
+        <div>
+          <div class="level-name">Modo 3</div>
+          <div class="level-value">Relé 3</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="level-row" id="btnSecuencial" style="cursor: pointer;">
+      <div class="level-left">
+        <div class="level-icon">↻</div>
+        <div>
+          <div class="level-name">Secuencial</div>
+          <div class="level-value">Bucle continuo de activación, es infinito</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="level-row" id="btnSimultaneo" style="cursor: pointer;">
+      <div class="level-left">
+        <div class="level-icon">⚡</div>
+        <div>
+          <div class="level-name">Simultáneo</div>
+          <div class="level-value">Enciende todos los relés juntos</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="info">
+    ● &nbsp; Estado actual: <strong id="selectedLevel">Esperando comando...</strong>
+  </div>
+</main>
+
+<footer>© 2026 NEXA MediTech. Todos los derechos reservados.</footer>
+
+<script src="niveles.js"></script>
+</body>
+</html>

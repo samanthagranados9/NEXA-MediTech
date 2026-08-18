@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NEXA MediTech | Gráfico</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <img src="assets/logo_nexa_meditech.png" alt="NEXA MediTech">
+    <span>CircuitFlex</span>
+  </a>
+  <nav class="nav">
+    <a href="index.html" data-page="inicio"><span class="ico">⌂</span>Inicio</a>
+    <a href="grafico.html" data-page="grafico" class="active"><span class="ico">▥</span>Gráfico</a>
+    <a href="niveles.html" data-page="niveles"><span class="ico">☷</span>Niveles</a>
+  </nav>
+</header>
+
+<main class="page">
+  <div class="title-row">
+    <div class="title-icon">▥</div>
+    <div>
+      <h1>Datos o Gráficos</h1>
+      <p class="subtitle">Visualización de datos del sensor</p>
+    </div>
+  </div>
+
+  <section class="card level-selector">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap">
+      <h3 style="margin:0">Nivel actual</h3>
+      <span id="firebaseStatus" style="font-weight:700;color:#68758a">Conectando con Firebase...</span>
+    </div>
+
+    <div class="levels-top" style="margin-top:15px">
+	  <button class="level-btn" data-level="bajo">Modo 1<br><small>Rele 1</small></button>
+      <button class="level-btn" data-level="medio">Modo 2<br><small>Rele 2</small></button>
+      <button class="level-btn" data-level="alto">Modo 3<br><small>Rele 3</small></button>
+    </div>
+  </section>
+
+  <section class="card chart-card">
+    <canvas id="sensorChart"></canvas>
+  </section>
+
+  <section class="actions">
+    <button class="action-btn sim" id="refreshButton">↻ &nbsp; Actualizar ahora</button>
+    <button class="action-btn stop" id="stopButton">■ &nbsp; Detener lectura</button>
+  </section>
+
+  <div class="info">
+    ● &nbsp; Nivel actual: <strong id="levelLabel">--</strong>
+    &nbsp; | &nbsp; Valor: <strong id="currentValue">--</strong>
+    &nbsp; | &nbsp; Última lectura: <strong id="lastUpdate">--</strong>
+  </div>
+</main>
+
+<footer>© 2026 NEXA MediTech. Todos los derechos reservados.</footer>
+
+<script src="dashboard.js"></script>
+<script src="grafico_dashboard.js"></script>
+</body>
+</html>
